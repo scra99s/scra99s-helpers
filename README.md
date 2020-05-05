@@ -1,30 +1,4 @@
 ## scra99s-helpers
-This is just a bunch of personal references for commands and configs that I forget on regular basis aka "good guts"
-Yeh I do also agree that this can mostly be accomplish with man <command> or <command> help. But i'll do as I please.
-
-#### Nix*
-1. firewalls
-   * firewalld (RHEL, Centos)
-   * UFW (Deb based distros)
-2. netstat
-   * All distros
-3. curl/wget
-   * All distros
-4. ip (add, route. etc)
-   * Most distros
-5. docker
-   * All distros
-6. ssh
-    * local config examples
-    * key-gen
-7. git
-   * General
-
-#### WSL 
-1. Systemd fix/hack
-
-##### Windows
-1. Powershell
-   * Symlinks
-   * Install WSL
-   * Install Chrome
+This is just a bunch of personal references for commands/configs etc that I use a lot but forget on regular basis.
+> A few of the scripts aren't authored by me, just changed to suit my needs.
+If you see something that's yours feel free to complain and i'll credit you (or make this a private repo).
