@@ -2,6 +2,7 @@
 > All snipets are copy/paste, if you want to run as scripts you will need create a ps1 for each snippet.
   1. Run Powershell as adminstrator (even if copy/paste)
   2. Set execution policy and run the script
+  
     ```powershell 
     powershell.exe -noprofile -executionpolicy bypass -file .\script.ps1
     ```
