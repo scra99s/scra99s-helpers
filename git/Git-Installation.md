@@ -21,26 +21,3 @@ git --version
 ```bash
 sudo pacman -S git bash-completion
 ```
-
-#### Windows (Powershell)
-###### Run Powershell as administrator
-```powershell
-$Downloadlocation = $env:TEMP
-$GIT_Base_URL = "https://git-scm.com/download/win"
-$Req = Invoke-WebRequest -UseBasicParsing -Uri $GIT_Base_URL
-$DownloadLink = ($req.Links | where outerhtml -match "64-bit Git for Windows Setup").href
-$file = split-path -Leaf $DownloadLink
-$Outfile = Join-Path $Downloadlocation $file
-Invoke-WebRequest  $DownloadLink -OutFile $Outfile
-Unblock-File $Outfile
-Start-Process (join-path $Downloadlocation $file) -ArgumentList "/SILENT" -Wait
-$env:Path += ";C:\Program Files\Git\cmd"
-Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned -Force
-Install-PackageProvider NuGet -Force -scope CurrentUser;
-Install-Module PowerShellGet -Force -SkipPublisherCheck
-Install-Module posh-git -Scope CurrentUser -Force
-Import-Module posh-git
-Add-PoshGitToProfile -AllHosts
-```
-
-

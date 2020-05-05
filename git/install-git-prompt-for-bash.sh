@@ -5,6 +5,7 @@ function Install_Git_Prompt_Hook() {
     echo "[SKIP] Git prompt hook is already installed in ${HOME}/.bashrc"
   else
 cat >> "$HOME/.bashrc" << EOF
+##GIT_PROMPT_HOOK##
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
   GIT_PROMPT_ONLY_IN_REPO=1
   GIT_PROMPT_THEME=Solarized
