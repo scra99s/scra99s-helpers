@@ -2,7 +2,6 @@
 This is just a bunch of personal references for commands and configs that I forget on regular basis aka "good guts"
 Yeh I do also agree that this can mostly be accomplish with man <command> or <command> help. But i'll do as I please.
 
-
 #### Nix*
 1. firewalls
    * firewalld (RHEL, Centos)
@@ -18,9 +17,11 @@ Yeh I do also agree that this can mostly be accomplish with man <command> or <co
 6. ssh
     * local config examples
     * key-gen
+7. git
+   * General
 
 #### WSL 
-1. Systemd hack
+1. Systemd fix/hack
 
 ##### Windows
 1. Powershell
