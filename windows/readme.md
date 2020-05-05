@@ -7,6 +7,15 @@
 powershell.exe -noprofile -executionpolicy bypass -file .\script.ps1
 ```
 
+## Install WSL (Powershell)
+> Because this can only make your life better (install distro of your choice after from microsoft store)
+  You will need to restart eventually...
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+
 ### Install Git and Posh-git for Windows (Powershell)
 > Pretty sweet gives you git related prompt and tab autocomplete for git commands.
 ```powershell
